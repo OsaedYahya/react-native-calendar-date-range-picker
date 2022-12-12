@@ -1,0 +1,33 @@
+{
+  "name": "react-native-calendar-date-range-picker",
+  "version": "0.0.1",
+  "description": "React Native Calendar RangePicker Component ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OsaedYahya/react-native-calendar-date-range-picker.git"
+  },
+  "keywords": [
+    "rangepicker",
+    "calendar",
+    "range",
+    "react-native",
+    "react-component"
+  ],
+  "author": "Osaed Yahya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OsaedYahya/react-native-calendar-date-range-picker/issues"
+  },
+  "peerDependencies": {
+    "moment": "*"
+  },
+  "homepage": "https://github.com/OsaedYahya/react-native-calendar-date-range-picker#readme",
+  "dependencies": {
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {}
+}
