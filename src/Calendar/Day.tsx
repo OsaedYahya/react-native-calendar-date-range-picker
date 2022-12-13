@@ -10,7 +10,7 @@ import { DayProps, DayStyles } from "./Calendar.types";
 const Day = (props: DayProps): JSX.Element => {
   const {
     id,
-    dayStyles: customDayStyles = {} as DayStyles,
+    theme: customDayStyles = {} as DayStyles,
     onChangeCb,
     month,
     year,
@@ -78,7 +78,7 @@ const Day = (props: DayProps): JSX.Element => {
     disabledTextStyle,
   } = dayStyle;
 
-  const dayStyles = isDayDisabled
+  const theme = isDayDisabled
     ? [disabledTextStyle, customDayStyles.disabledTextStyle]
     : starting && !end
     ? [startSelectedDayTextStyle, customDayStyles.startSelectedDayTextStyle]
@@ -131,7 +131,7 @@ const Day = (props: DayProps): JSX.Element => {
 
   return (
     <Pressable disabled={isDayDisabled} style={containerStyle} onPress={handleOnPress}>
-      <Text style={dayStyles}>{day}</Text>
+      <Text style={theme}>{day}</Text>
     </Pressable>
   );
 };

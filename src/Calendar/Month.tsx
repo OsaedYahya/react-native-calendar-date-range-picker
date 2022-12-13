@@ -9,7 +9,7 @@ import { MonthProps } from "./Calendar.types";
 import Day from "~/components/common/Calendar/Day";
 
 const Month = (props: MonthProps): JSX.Element => {
-  const { year, month, onChangeCb, dayStyles, minDate } = props;
+  const { year, month, onChangeCb, theme, minDate } = props;
   const [calendar, setCalendar] = useState<string[][]>([]);
 
   const { containerStyle } = useMemo(() => monthStyle, []);
@@ -39,7 +39,7 @@ const Month = (props: MonthProps): JSX.Element => {
           {week.map(currentDay => {
             return (
               <Day
-                dayStyles={dayStyles}
+                theme={theme}
                 key={`${year}-${month + 1}-${currentDay}`}
                 id={`${year}-${month + 1}-${currentDay}`}
                 day={currentDay}

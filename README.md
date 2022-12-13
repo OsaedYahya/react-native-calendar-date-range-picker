@@ -26,7 +26,7 @@ yarn add react-native-calendar-date-range-picker
 |-------------|----|----------|-------|--------------------------------------------------------------|
 | onChangeCb | No | (SelectedRangeType) => void | () => void | Function that gets triggered on any selection change |
 | onDonePressedCb | No | (SelectedRangeType) => void | () => void | When done button is pressed |
-| dayStyles | No | DayStyles | {} | styles for calendar/day components|
+| theme | No | DayStyles | {} | styles for calendar/day components|
 | monthHeight| No  | Number | 300 | Approximate height for each month (along with days) |
 | monthsCount | No | Number | 12 | Number of months starting from minDate |
 | minDate | No | Moment | undefined | Starting date

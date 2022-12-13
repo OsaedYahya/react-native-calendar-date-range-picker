@@ -27,7 +27,7 @@ const Calendar = (props: CalendarDateRangePickerProps): JSX.Element => {
     initialSelectedRange = INITIAL_SELECTED_DATE,
     startIndex = 0,
     minDate,
-    dayStyles,
+    theme,
     renderWeekTextComponent = (monthTitle: string) => <Text>{monthTitle}</Text>,
     renderMonthTextComponent = (month: Moment) => (
         <Text style={monthNameTextComponentStyle}>{month.format("MMMM")}</Text>
@@ -72,7 +72,7 @@ const Calendar = (props: CalendarDateRangePickerProps): JSX.Element => {
               ))}
             </View>
             <Month
-                dayStyles={dayStyles}
+                theme={theme}
                 onChangeCb={handleMonthChanged}
                 month={item.get("month")}
                 year={item.get("year")}
@@ -84,7 +84,7 @@ const Calendar = (props: CalendarDateRangePickerProps): JSX.Element => {
         containerStyle,
         renderMonthTextComponent,
         monthNameContainerStyle,
-        dayStyles,
+        theme,
         handleMonthChanged,
         minDate,
         monthNameStyle,

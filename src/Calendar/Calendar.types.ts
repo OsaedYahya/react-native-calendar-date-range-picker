@@ -14,7 +14,7 @@ interface CalendarInterface {
   renderMonthTextComponent?: (_title: Moment) => JSX.Element;
   onDonePressedCb?: (_selectedDate: SelectedRangeType) => void;
   onChangeCb?: (_selectedDate: SelectedRangeType) => void;
-  dayStyles?: DayStyles;
+  theme?: DayStyles;
 }
 
 export type DayProps = {
@@ -25,7 +25,7 @@ export type DayProps = {
   week: number;
   day: number | string;
   minDate?: Moment;
-  dayStyles?: DayStyles;
+  theme?: DayStyles;
 };
 
 export interface DayStyles {
@@ -52,7 +52,7 @@ export type MonthProps = {
   year: number;
   month: number;
   minDate?: Moment;
-  dayStyles?: DayStyles;
+  theme?: DayStyles;
   onChangeCb: (_selectedDate: SelectedRangeType) => void;
 };
 
