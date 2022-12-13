@@ -6,7 +6,7 @@ import moment, { Moment } from "moment";
 import "moment/min/locales";
 
 import calendarStyle, { calendarDefaultStyles } from "./Calendar.style";
-import { CalendarTypes, SelectedRangeType } from "./Calendar.types";
+import { CalendarDateRangePickerProps, SelectedRangeType } from "./Calendar.types";
 import Month from "./Month";
 
 const INITIAL_SELECTED_DATE = {
@@ -15,7 +15,7 @@ const INITIAL_SELECTED_DATE = {
 };
 export const CalendarContext = createContext<SelectedRangeType>(INITIAL_SELECTED_DATE);
 
-const Calendar = (props: CalendarTypes): JSX.Element => {
+const Calendar = (props: CalendarDateRangePickerProps): JSX.Element => {
   const { monthNameTextComponentStyle } = calendarDefaultStyles;
 
   const {
@@ -32,7 +32,7 @@ const Calendar = (props: CalendarTypes): JSX.Element => {
     renderMonthTextComponent = (month: Moment) => (
         <Text style={monthNameTextComponentStyle}>{month.format("MMMM")}</Text>
     ),
-    renderFooterComponent = (onPress: () => void, count: string) => (
+    renderFooterComponent = (onPress: () => void, count: number) => (
         <Button title={`Done (${count}) selected`} onPress={onPress} />
     ),
   } = props || {};

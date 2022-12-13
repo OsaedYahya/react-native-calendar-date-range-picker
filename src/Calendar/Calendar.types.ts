@@ -56,4 +56,4 @@ export type MonthProps = {
   onChangeCb: (_selectedDate: SelectedRangeType) => void;
 };
 
-export type CalendarTypes = CalendarInterface;
+export type CalendarDateRangePickerProps = CalendarInterface;

@@ -1,10 +1,10 @@
 import Calendar from "./Calendar";
 import {
-    CalendarTypes,
+    CalendarDateRangePickerProps,
     DayStyles,
     DayProps,
     MonthProps,
     SelectedRangeType,
 } from "./Calendar.types";
 
-export { Calendar, CalendarTypes, DayStyles, DayProps, MonthProps, SelectedRangeType };
+export { Calendar, CalendarDateRangePickerProps, DayStyles, DayProps, MonthProps, SelectedRangeType };
