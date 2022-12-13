@@ -6,7 +6,7 @@ import moment from "moment";
 import { monthStyle } from "./Calendar.style";
 import { MonthProps } from "./Calendar.types";
 
-import Day from "~/components/common/Calendar/Day";
+import Day from "./Day";
 
 const Month = (props: MonthProps): JSX.Element => {
   const { year, month, onChangeCb, theme, minDate } = props;
