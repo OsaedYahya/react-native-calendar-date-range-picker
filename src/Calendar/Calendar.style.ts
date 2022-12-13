@@ -36,7 +36,7 @@ export const monthStyle = StyleSheet.create({
 });
 
 export const dayStyle = StyleSheet.create({
-  nothingContainerStyle: {
+  unselectedContainerStyle: {
     marginTop: 4,
     justifyContent: "center",
     flex: 1,

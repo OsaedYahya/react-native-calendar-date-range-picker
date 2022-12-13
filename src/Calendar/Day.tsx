@@ -64,7 +64,7 @@ const Day = (props: DayProps): JSX.Element => {
   };
 
   const {
-    nothingContainerStyle,
+    unselectedContainerStyle,
     startingContainerStyle,
     betweenContainerStyle,
     startingWithEndContainerStyle,
@@ -104,13 +104,13 @@ const Day = (props: DayProps): JSX.Element => {
         ? [endContainerStyle, customDayStyles.endContainerStyle]
         : ending
         ? [endingContainerStyle, customDayStyles.endingContainerStyle]
-        : [nothingContainerStyle, customDayStyles.nothingContainerStyle],
+        : [unselectedContainerStyle, customDayStyles.unselectedContainerStyle],
     [
       betweenContainerStyle,
       customDayStyles.betweenContainerStyle,
       customDayStyles.endContainerStyle,
       customDayStyles.endingContainerStyle,
-      customDayStyles.nothingContainerStyle,
+      customDayStyles.unselectedContainerStyle,
       customDayStyles.startingContainerStyle,
       customDayStyles.startingWithEndContainerStyle,
       end,
@@ -118,7 +118,7 @@ const Day = (props: DayProps): JSX.Element => {
       ending,
       endingContainerStyle,
       isBetween,
-      nothingContainerStyle,
+      unselectedContainerStyle,
       starting,
       startingContainerStyle,
       startingWithEndContainerStyle,

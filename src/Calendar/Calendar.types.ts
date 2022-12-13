@@ -29,7 +29,7 @@ export type DayProps = {
 };
 
 export interface DayStyles {
-  nothingContainerStyle?: ViewStyle;
+  unselectedContainerStyle?: ViewStyle;
   endContainerStyle?: ViewStyle;
   startingContainerStyle?: ViewStyle;
   startingWithEndContainerStyle?: ViewStyle;
